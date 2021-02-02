@@ -1,9 +1,8 @@
-print("Program to find gcd of 2 numbers.")
-n=int(input("Enter 1st number : "))
-m=int(input("Enter 2nd number :"))
-while(n!=m):
-	if(n>m):
-		n=n-m
-	else:
-		m=m-n
-print(n)
+print("Program to find gcd...")
+n1=int(input("Enter a number : "))
+n2=int(input("Enter another number : "))
+while n2>0:
+	r=n1%n2
+	n1=n2
+	n2=r
+print("GCD is ",n1)
